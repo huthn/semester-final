@@ -6,8 +6,13 @@ import org.asl.karelx.Wanderer;
  */
 public class Horse extends Wanderer {
 
-	//  TODO Add one or more constructors, as needed
+	public Horse() {
+		super();
+	}
 	
+	public Horse(int i, int j) {
+		super(i, j);
+	}
 	/**
 	 * Wander around in random directions until a specified number of steps have been taken.
 	 * At regular intervals specified by timer, drop a beeper.
@@ -18,6 +23,16 @@ public class Horse extends Wanderer {
 	 * Ex. horse.wander(13, 4) should drop a beeper every four steps until thirteen steps are taken
 	 */
 	public void wander(int count, int timer) {
-		// TODO You implement this
+		int time = 1;
+		for(int i = 0; i<count; i++) {
+			if(!frontIsClear()) {
+				turnAround();
+			}
+			wander();
+			if(time % timer  == 0) {
+				putBeeper();
+			}
+			time++;
+		}
 	}
 }

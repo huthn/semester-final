@@ -6,7 +6,14 @@ import org.asl.karelx.Uberbot;
  */
 public class Sentry extends Uberbot {
 
-	// Provide one or more constructors, as you wish
+	public Sentry() {
+		super();
+	}
+	
+	public Sentry(int x, int y, int dir,int beep) {
+		super(x, y, dir, beep);
+	}
+	
 	
 	/**
 	 * Patrol an area in a clockwise direction.  
@@ -15,6 +22,13 @@ public class Sentry extends Uberbot {
 	 *
 	 */
 	public void patrol() {
-		// TODO You implement this method.
+		move();
+		while(!nextToABeeper()) {
+			move();
+			if(nextToABeeper()) {
+				turnRight();
+				move();
+			}
+		}
 	}
 }

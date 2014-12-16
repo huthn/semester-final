@@ -1,0 +1,29 @@
+<world>
+  <properties>
+    <defaultSize height='10' width='10'/>
+  </properties>
+  <objects>
+    <wall x='2' y='5' length='6' style='vertical'/>
+    <wall x='5' y='5' length='6' style='vertical'/>
+    <wall x='3' y='10' length='3' style='horizontal'/>
+    <wall x='3' y='4' length='3' style='horizontal'/>
+    <beeper x='3' y='10' num='2'/>
+    <beeper x='4' y='10' num='2'/>
+    <beeper x='5' y='10' num='1'/>
+    <beeper x='3' y='9' num='0'/>
+    <beeper x='4' y='9' num='2'/>
+    <beeper x='5' y='9' num='1'/>
+    <beeper x='3' y='8' num='1'/>
+    <beeper x='4' y='8' num='2'/>
+    <beeper x='5' y='8' num='0'/>
+    <beeper x='3' y='7' num='1'/>
+    <beeper x='4' y='7' num='0'/>
+    <beeper x='5' y='7' num='0'/>
+    <beeper x='3' y='6' num='0'/>
+    <beeper x='4' y='6' num='1'/>
+    <beeper x='5' y='6' num='1'/>
+    <beeper x='3' y='5' num='1'/>
+    <beeper x='4' y='5' num='1'/>
+    <beeper x='5' y='5' num='2'/>
+  </objects>
+</world>

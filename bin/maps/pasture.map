@@ -1,0 +1,11 @@
+<world>
+  <properties>
+    <defaultSize height='10' width='10'/>
+  </properties>
+  <objects>
+    <wall x='5' y='1' length='7' style='horizontal'/>
+    <wall x='4' y='2' length='5' style='vertical'/>
+    <wall x='5' y='6' length='7' style='horizontal'/>
+    <wall x='11' y='2' length='5' style='vertical'/>
+  </objects>
+</world>
